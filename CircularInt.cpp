@@ -14,6 +14,12 @@ CircularInt::CircularInt(int lowNum, int highNum){
 CircularInt::CircularInt(int x1) {
 	this->ans = x1;
 }
+CircularInt::CircularInt(const CircularInt& other)
+{
+   lowNum = other.lowNum;
+    highNum = other.highNum;
+    ans = other.ans;
+};
 
 // distructor
 CircularInt::~CircularInt(){
