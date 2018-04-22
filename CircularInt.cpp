@@ -26,8 +26,25 @@ ostream & operator<<(ostream & os, const CircularInt &c)
 		return os;
 	
 }
+CircularInt operator+( int num, CircularInt& c )
+{
+    copy =copy+num;
+    CircularInt copy(c);
+    return copy;
+}
+CircularInt operator+(CircularInt& c , int num)
+{
+    copy =copy+num;
+    CircularInt copy(c);
+    return copy;
+}
+const CircularInt operator+(CircularInt const& c1 , CircularInt const& c2)
+{
+    CircularInt temp(c1);
+    temp += c2;
+    return temp;
 
-
+}
 
 int& CircularInt::operator+=(const int & c)
 {
