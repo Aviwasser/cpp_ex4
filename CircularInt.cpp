@@ -33,15 +33,15 @@ ostream & operator<<(ostream & os, const CircularInt &c)
 	
 }
 CircularInt operator+( int num, CircularInt& c )
-{
-    copy =copy+num;
+{ 
     CircularInt copy(c);
+    copy =copy+num;
     return copy;
 }
 CircularInt operator+(CircularInt& c , int num)
-{
-    copy =copy+num;
+{ 
     CircularInt copy(c);
+    copy =copy+num;
     return copy;
 }
 const CircularInt operator+(CircularInt const& c1 , CircularInt const& c2)
